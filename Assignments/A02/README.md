@@ -1,4 +1,4 @@
-##Assignment 2 - David McGinn
+## Assignment 2 - David McGinn
 ### Quality Software Tools:
 1. Image Editing
     - Inkscape: open source image editor for vector graphics https://inkscape.org/

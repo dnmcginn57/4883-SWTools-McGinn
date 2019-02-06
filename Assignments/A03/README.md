@@ -2,6 +2,6 @@
 ### David McGinn
 
 #### Files:
-  * McGinn_Scraping.py - this file handles all of the data scraping from the NFL,
-                         It gets the gameID's and uses them to generate a url to fetch the json files for each game.
+  * McGinn_Scraping.py - this file handles all of the data scraping from the NFL,<br><\t>
+                         It gets the gameID's and uses them to generate a url to fetch the json files for each game.<br><\t>
                          stores all of the fetched jsons in a folder called "game_data"

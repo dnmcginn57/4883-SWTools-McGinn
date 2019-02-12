@@ -56,13 +56,94 @@ C.Newton has rushed for a loss 24 times.
 
 Answer:
 
+T.Brady has passed for a loss 26 times.
+A.Rodgers has passed for a loss 21 times.
+J.Flacco has passed for a loss 19 times.
+B.Roethlisberger has passed for a loss 19 times.
+D.Brees has passed for a loss 16 times.
+P.Rivers has passed for a loss 16 times.
+M.Stafford has passed for a loss 14 times.
+C.Keenum has passed for a loss 12 times.
+E.Manning has passed for a loss 11 times.
+A.Smith has passed for a loss 11 times.
 =====================================================
 6. Find the team with the most penalties
 
 Answer:
 
+SEA has been penalized 157 times.
+NE has been penalized 148 times.
+DEN has been penalized 132 times.
+GB has been penalized 126 times.
+SF has been penalized 121 times.
+PIT has been penalized 113 times.
+BAL has been penalized 111 times.
+NO has been penalized 104 times.
+CIN has been penalized 102 times.
+ARI has been penalized 100 times.
 =====================================================
 7. Find the team with the most yards in penalties
 
 Answer:
 
+SEA has been given 1362 yards in penalties.
+NE has been given 1232 yards in penalties.
+DEN has been given 1144 yards in penalties.
+PIT has been given 1128 yards in penalties.
+GB has been given 1011 yards in penalties.
+BAL has been given 976 yards in penalties.
+SF has been given 960 yards in penalties.
+NO has been given 932 yards in penalties.
+NYJ has been given 881 yards in penalties.
+CIN has been given 875 yards in penalties.
+=====================================================
+10. Longest Field Goal
+
+Answer:
+
+S.Janikowski has kicked the longest field goal at 61 yards!
+=====================================================
+11. Most Field Goals
+
+Answer:
+
+S.Gostkowski has kicked 54 field goals
+M.Crosby has kicked 35 field goals
+M.Prater has kicked 33 field goals
+S.Hauschka has kicked 32 field goals
+G.Gano has kicked 30 field goals
+P.Dawson has kicked 28 field goals
+S.Janikowski has kicked 26 field goals
+A.Vinatieri has kicked 26 field goals
+M.Bryant has kicked 25 field goals
+D.Akers has kicked 24 field goals
+=====================================================
+12. Most Missed Field Goals
+
+Answer:
+
+D.Akers has biffed 8 field goals
+G.Gano has biffed 8 field goals
+S.Gostkowski has biffed 7 field goals
+S.Janikowski has biffed 7 field goals
+S.Graham has biffed 6 field goals
+M.Crosby has biffed 6 field goals
+N.Folk has biffed 6 field goals
+J.Feely has biffed 6 field goals
+A.Vinatieri has biffed 6 field goals
+S.Suisham has biffed 5 field goals
+=====================================================
+13. Most Dropped Passes
+
+Answer:
+
+T.Brady has 435 incomplete passes.
+D.Brees has 274 incomplete passes.
+A.Rodgers has 250 incomplete passes.
+J.Flacco has 230 incomplete passes.
+B.Roethlisberger has 224 incomplete passes.
+E.Manning has 214 incomplete passes.
+P.Manning has 198 incomplete passes.
+R.Wilson has 193 incomplete passes.
+M.Ryan has 188 incomplete passes.
+P.Rivers has 176 incomplete passes.

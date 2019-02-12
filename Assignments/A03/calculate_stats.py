@@ -161,7 +161,7 @@ def passForLoss(data, stat):
                 #list associated with the player in the play
                 for l in data[season][pid]['players'][player]:
                     if l['yards'] is not None and l['yards'] != '':
-                        #if the player rushed AND lost yards
+                        #if the player passed AND lost yards, not sure if 0 counts as a loss or not
                         if int(l['statId']) == stat and int(l['yards']) <= 0:
                             if l['playerName'] not in playernames:
                                 playernames[l['playerName']] = [l['yards']]
@@ -195,7 +195,7 @@ def tPenaltyInfo(data):
                 #list associated with the player in the play
                 for l in data[season][pid]['players'][player]:
                     if l['yards'] is not None and l['yards'] != '':
-                        #if the player rushed AND lost yards
+                        #if penalty apply it to player's club code
                         if int(l['statId']) == 93:
                             if l['clubcode'] not in clubcodes:
                                 clubcodes[l['clubcode']] = [l['yards']]

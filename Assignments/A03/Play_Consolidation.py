@@ -1,6 +1,6 @@
 """
 This file consolidates all plays into a single json
-assumes folder play_data is existant
+assumes folder play_data is exists
 """
 import os, sys
 import json

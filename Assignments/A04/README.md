@@ -7,4 +7,4 @@
   * query_function.php - assists stats_display.php with querying the database
   * stats_display.php - displays required stats on the webzone
   * team_games.php - this is the tutorial file, displays games played by the Cowboys last season(2018)
-  * you can view output at [link](http://cs2.mwsu.edu/~dmcginn/software_tools/stats_display.php "This Webzone").
+  * you can view output at [This Webzone](http://cs2.mwsu.edu/~dmcginn/software_tools/stats_display.php "This Webzone").

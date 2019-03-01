@@ -157,9 +157,34 @@
     }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-//              SPACE RESERVED FOR 7th(Q6)  SOLUTION
-//              team with lowest avg plays each season
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    $sql = "SELECT `club`,`season`,COUNT(DISTINCT(`playid`))/COUNT(DISTINCT(`gameid`)) AS avg_plays\n"
+        .  "FROM `players_stats`\n"
+        .  "GROUP BY `season`,`club`\n"
+        .  "ORDER BY `season`,avg_plays";
+    
+    $response = runQuery($mysqli,$sql);
+
+    if($response['success']){
+        echo "\n7.) Lowest Average plays: \n\n";
+        echo "# \t club \t\t Season \t\t Avg Plays\n";
+        echo "==================================================\n";
+        $data = $response['result'];
+        
+        $cur_season = 2009;
+        $li = 1;
+        foreach($data as $row){
+            if($row['season'] == $cur_season){
+                echo "$li \t {$row['club']} \t\t {$row['season']} \t\t\t {$row['avg_plays']}\n";
+                $li ++;
+                $cur_season ++;
+            }
+        }
+    }
+    else{
+        echo $response['error'];
+    }
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
     $sql = "SELECT `playerid`,COUNT(`statid`) AS goal_kicks\n"
@@ -213,9 +238,70 @@
         echo $response['error'];
     }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+// I used a join :p
+    $sql = "SELECT `wonloss` ,`club`, count, count/total percent\n"
+        . "    FROM\n"
+        . "    (\n"
+        . "        SELECT `wonloss`, `club` , count(`wonloss`) count\n"
+        . "        FROM game_totals\n"
+        . "        WHERE `wonloss` = 'won'\n"
+        . "        GROUP BY `wonloss` , `club`\n"
+        . "    ) c JOIN(\n"
+        . "        SELECT COUNT(*) total\n"
+        . "        FROM game_totals\n"
+        . "        GROUP BY `club` \n"
+        . "    )t\n"
+        . "    GROUP BY `club`\n"
+        . "    ORDER BY percent";
+
+    $response = runQuery($mysqli,$sql);
+
+    if($response['success']){
+        echo "\n10.) Win percentage: \n\n";
+        echo "# \t Team \t\t win/loss%\n";
+        echo "==================================================\n";
+        
+        $data = $response['result'];
+        $position = 1;
+        foreach($data as $row){
+            echo "$position \t {$row['club']} \t\t {$row['percent']}\n";
+            $position ++;
+        }
+    }
+    else{
+        echo $response['error'];
+    }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    $sql = "SELECT substring_index(`name`, '.', -1) AS surname, COUNT(DISTINCT substring_index(`name`, '.', 1)) AS popularity\n"
+        . "FROM players\n"
+        . "WHERE `name` != ''\n"
+        . "GROUP BY surname\n"
+        . "ORDER BY popularity DESC\n"
+        . "LIMIT 5";
+
+    $response = runQuery($mysqli,$sql);
+
+    if($response['success']){
+        echo "\n11.) Win percentage: \n\n";
+        echo "# \t Name \t\t Occurrences\n";
+        echo "==================================================\n";
+        $data = $response['result'];
+        $position = 1;
+        foreach($data as $row){
+            echo "$position \t {$row['surname']}  \t\t {$row['popularity']}\n"; 
+            $position ++;           
+        }
 
 
-            
+    }
+    else{
+        
+        echo $result['error'];
+    }
+    
 ?>
 
 <html>

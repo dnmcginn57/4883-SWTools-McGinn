@@ -8,3 +8,4 @@
   * stats_display.php - displays required stats on the webzone
   * team_games.php - this is the tutorial file, displays games played by the Cowboys last season(2018)
   * you can view output at [This Webzone](http://cs2.mwsu.edu/~dmcginn/software_tools/stats_display.php "This Webzone").
+  * stats.txt - stats have been compiled here as well

@@ -12,4 +12,4 @@
   
  ### Instructions
  
- To see this code run yourself, you'd need to create a file called `config.php` to connect it to the proper server
+ To see this code run yourself, you'd need to create a file called `config.php` to connect it to the proper server, and open stats_display.php with your web browser.

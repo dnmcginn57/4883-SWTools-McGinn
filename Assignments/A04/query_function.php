@@ -46,7 +46,7 @@ function nameByID($mysqli,$pid){
 
     if($response['success']){
         $data = $response['result'];
-        //$name = $pid;
+        
         $name = $data[0]['name'];
     }
     else

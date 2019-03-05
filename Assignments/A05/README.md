@@ -18,3 +18,8 @@ python3 ascii_image.py ./input_images/sock_cat.jpg ./output_images/sock_cat_asci
 while a path, or name of font stored in your machines `usr/share/font` folder, to any font are technically supported, 
 I have configured this program to work best with the [Sushi Sushi](https://www.dafont.com/sushi-sushi.font) font mentioned above
 
+### Other notes
+
+I have configured this program to allow characters to overlap a bit, but not so much as to render a perfect image.
+The minor overlap creates a more 'legible' picture while maintaining the feel of ascii art
+

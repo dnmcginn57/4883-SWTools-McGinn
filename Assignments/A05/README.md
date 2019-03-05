@@ -22,4 +22,8 @@ I have configured this program to work best with the [Sushi Sushi](https://www.d
 
 I have configured this program to allow characters to overlap a bit, but not so much as to render a perfect image.
 The minor overlap creates a more 'legible' picture while maintaining the feel of ascii art
+<br>
+<br>
+
+![](https://raw.githubusercontent.com/dnmcginn57/4883-SWTools-McGinn/master/Assignments/A05/output_images/JCASCII.png)
 

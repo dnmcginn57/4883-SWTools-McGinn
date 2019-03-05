@@ -14,7 +14,7 @@ run ascii_image.py from the terminal, it requires 4 arguments besides the filena
 ```
 python3 ascii_image.py ./input_images/sock_cat.jpg ./output_images/sock_cat_ascii.png SushiSushi 6
 ```
-<br>will run the program, converting the image sock_cat.jpg into sock_cat_ascii.png using SushiSushi font with a size of 6pt.<br>
+<br>will run the program, converting the image `sock_cat.jpg` into `sock_cat_ascii.png` using [Sushi Sushi](https://www.dafont.com/sushi-sushi.font) font with a size of 6pt.<br>
 while a path, or name of font stored in your machines `usr/share/font` folder, to any font are technically supported, 
 I have configured this program to work best with the [Sushi Sushi](https://www.dafont.com/sushi-sushi.font) font mentioned above
 

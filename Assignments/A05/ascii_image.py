@@ -18,7 +18,7 @@ higher value = a less full character
 depending on how this turns out perhaps tuning the character to the alpha channel could be good too
 """
 def value_lookup(pColor):
-    #ordered from darkest to lightest with respect to the "SushiSushi" font from dafont
+    #ordered from darkest to lightest with respect to the "Sushi Sushi" font from dafont
     custom_chars = ['G', 'K', 'A', '.', 'M', 'u', '|', 's', 'Z', 'E', '$']
     r,g,b,a = pColor
     value = int((r+b+g)/3)
@@ -47,7 +47,7 @@ def image_to_ascii(**kwargs):
 
     newIm = Image.new('RGBA', im.size, (255,255,255,255))
 
-    #Come back here and make it so that the user can specify font & size
+    #font declaration
     fnt = ImageFont.truetype(fntPath, fntSize)
 
     drawOnMe = ImageDraw.Draw(newIm)
@@ -57,16 +57,15 @@ def image_to_ascii(**kwargs):
         if(y % (fntSize - 2) == 0):
             for x in range(w):
                 if(x % (fntSize - 2) == 0):
-                    #WAY faster than doing get pixel each time
+                    #faster than doing get pixel each time
                     pColor = pixels[x,y]
                     drawOnMe.text((x,y), value_lookup(pColor), font=fnt, fill=pColor)
 
 
+    #save image to output folder
     newIm.save(outPath)
 
-    return 1
 
-print(len(sys.argv))
 
 
 if(len(sys.argv) == 5):

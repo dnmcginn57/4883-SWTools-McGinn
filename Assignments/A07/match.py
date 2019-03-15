@@ -2,8 +2,10 @@
 David McGinn
 3-15-19
 4883-Software-Tools
-This program uses Mean Squared Error(MSE) to find the most similar
+This program uses Mean Squared Error(MSE) and Structual Similarity to find the most similar
 Image in a given folder
+
+someitmes the image displays a bit blue but eh, what are you gonna do?
 """
 from skimage.measure import compare_ssim as ssim
 import matplotlib.pyplot as plt

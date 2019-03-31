@@ -9,7 +9,7 @@
 ## Instructions
 
 Before `mosaic.py` can be run, `dominant.py` MUST run to create a JSON for `mosaic.py` to use.<br>
-to run `dominant.py` use the command line with a command like `python3 dominant.py [path]` where `[path]` is a folder full of images.<br>
+to run `dominant.py` use the command line with a command like `python3 dominant.py [path]` where `[path]` is a path to a folder full of images.<br>
 once `dominant.py` has successfully generated a json, `mosaic.py` is ready to go <br><br>
 
 `mosaic.py` expects a command with arguments like this `python3 mosaic.py [input_file=] [output_folder=] [SubImagesSize=]` <br>
@@ -20,6 +20,7 @@ __Example__ `python3 mosaic.py input_file=./input_images/duck.jpeg output_folder
 ## Notes:
 
 * `dominant.py` was necessary to cut down on processing time by making dominant color searches a one-time ordeal.
+* `dominant.py` must also run each time you wish to change your tileset
 
 <br><br><br>
 ![](https://raw.githubusercontent.com/dnmcginn57/4883-SWTools-McGinn/master/Assignments/A08/output_images/JC_mosaic.png)

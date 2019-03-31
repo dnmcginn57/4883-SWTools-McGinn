@@ -1,6 +1,6 @@
 # Image Mosaic
-## 4-1-19
-## David McGinn
+### 4-1-19
+### David McGinn
 
 ## Files
   * `mosaic.py` - creates a mosaic image

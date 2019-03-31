@@ -8,7 +8,7 @@
   
 ## Instructions
 
-Before `mosaic.py` can be run, `dominant.py` MUST run to create a JSON for `mosaic.py to use.<br>
+Before `mosaic.py` can be run, `dominant.py` MUST run to create a JSON for `mosaic.py` to use.<br>
 to run `dominant.py` use the command line with a command like `python3 dominant.py [path]` where `[path]` is a folder full of images.<br>
 once `dominant.py` has successfully generated a json, `mosaic.py` is ready to go <br><br>
 

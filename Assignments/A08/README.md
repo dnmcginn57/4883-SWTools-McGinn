@@ -3,8 +3,8 @@
 ## David McGinn
 
 ## Files
-  * mosaic.py - creates a mosaic image
-  * dominant.py - creates a JSON with image paths associated with their dominant RGB __MUST BE RUN FIRST__
+  * `mosaic.py` - creates a mosaic image
+  * `dominant.py` - creates a JSON with image paths associated with their dominant RGB __MUST BE RUN FIRST__
   
 ## Instructions
 
